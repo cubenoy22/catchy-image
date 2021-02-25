@@ -140,6 +140,11 @@ async function generateImage(options) {
     },
   })
 
+  if ('shadowColor' in options.style && 'shadowBlur' in options.style) {
+    ctx.shadowColor = options.style.shadowColor
+    ctx.shadowBlur = options.style.shadowBlur
+  }
+
   // Draw title texts
   lines.forEach(({ text, x, y }) => {
     ctx.fillStyle = options.style.title.fontColor

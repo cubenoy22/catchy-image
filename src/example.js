@@ -14,6 +14,8 @@ async function run() {
         // backgroundImage: require.resolve('./images/background.jpg'),
       },
       style: {
+        shadowColor: '#fff',
+        shadowBlur: 8,
         title: {
           fontFamily: 'Noto Sans CJK JP',
           fontColor: '#bb99ff',
