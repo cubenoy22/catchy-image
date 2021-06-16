@@ -10,7 +10,8 @@
     "dev": "node src/example.js",
     "build": "babel src/index.js -d lib",
     "watch": "babel src/**/*.js --watch -d lib --verbose",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "npm run build"
   },
   "author": "Kentaro Matsushita",
   "license": "MIT",
